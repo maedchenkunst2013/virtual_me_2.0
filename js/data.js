@@ -130,10 +130,10 @@
              var userData = firebase.database().ref("tag/languages/" + ladded.key + "/" + userID).set(true);
          });
          firebase.database().ref("users/" + userID + "/hobbies").on("child_removed", function (hbremoved) {
-             var userData = firebase.database().ref("tag/hobbies/" + hbremoved.key + "/" + userID).set(true);
+             var userData = firebase.database().ref("tag/hobbies/" + hbremoved.key + "/" + userID).set(null);
          });
          firebase.database().ref("users/" + userID + "/languages").on("child_removed", function (lremoved) {
-             var userData = firebase.database().ref("tag/languages/" + lremoved.key + "/" + userID).set(true);
+             var userData = firebase.database().ref("tag/languages/" + lremoved.key + "/" + userID).set(null);
          });
          userData.update({
                  name: form.uname.value,
