@@ -77,12 +77,21 @@
                  })
                  console.log(allUserData)
  // gibt alle pasenden userdaten als array in einr array aus
+                 return allUserData
              })
 
          });
      });
+     
+     
+     //display user data from matching list
+     
 
  }
+
+function displayUserData(allUserData){
+    allUserData.forEach()
+}
 
 
  function createNewUser(form) {
@@ -213,6 +222,7 @@
          document.write();
      })
  }
+
 
  function profileEdit() {
 
