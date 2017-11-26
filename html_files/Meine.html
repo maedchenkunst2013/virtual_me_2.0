@@ -18,6 +18,8 @@
 </head>
 
 <body>
+
+    <!-- sign in page -->
     <div id="signinpage">
         <div class="container-fluid">
             <div class="row">
@@ -60,19 +62,20 @@
         </div>
     </div>
 
-
+    <!-- when loged in -->
     <div id="home">
 
         <div class="container-fluid">
             <div class="row">
+                <!-- matching results -->
                 <div class="col-md-12">
                     <nav class="navbar navbar-default navbar-inverse" role="navigation">
                         <div class="navbar-header">
 
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-
-					</button> <a class="navbar-brand" href="#">VIRTUAL YOU</a>
+                                <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="">VIRTUAL YOU</a>
 
                         </div>
 
@@ -82,8 +85,26 @@
                                 <button type="submit" class="btn btn-default" onclick="matchusers()">
 							Find Match!</button>
                             </form>
-                            
+
                             <ul class="nav navbar-nav navbar-right">
+
+
+
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Profile
+                                            </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" onclick="profile()">View Profile</a>
+                                        <a class="dropdown-item" href="/html_files/profile.html">Edit Profile</a>
+                                        <a class="dropdown-item" onclick="return logout()">Logout</a>
+                                    </div>
+                                </div>
+
+
+
+
+                                <!--
 
                                 <div class="dropdown">
                                     <button onclick="showMenu()" class="dropbtn">Profile</button>
@@ -98,28 +119,14 @@
                                             <a onclick="return logout()">Logout</a>
                                         </li>
                                     </div>
-                                </div>
-                       </ul>
-
-
-
+                                </div> -->
+                            </ul>
 
                         </div>
 
                     </nav>
 
-                
-
-                <div class="carousel slide" id="carousel-33123" data-write= "carousel">
-                    <ol class="carousel-indicators">
-                        <li data-slide-to="0" data-target="#carousel-33123"  class="active">
-                        </li>
-                        <li data-slide-to="1" data-target="#carousel-33123">
-                        </li>
-                        <li data-slide-to="2" data-target="#carousel-33123">
-                        </li>
-                    </ol>
-                    
+                    <!-- carousel -->
                     <div class="carousel-inner">
                         <div class="item active">
                             <img src="/image_files/Image/africans_header.jpg">
@@ -136,234 +143,187 @@
                                 <h4>Meet new people from all over the world.</h4>
                             </div>
                         </div>
-                       <div class="item">
+                        <div class="item">
                             <img alt="Carousel Bootstrap Third" src="https://cdn.pixabay.com/photo/2015/01/08/18/26/write-593333_1280.jpg" />
                             <div class="carousel-caption">
                                 <h4>Meet new people from all over the world.</h4>
                             </div>
-                        </div> 
-                    </div> <a class="left carousel-control" href="#carousel-33123" data-slide="prev">
+                        </div>
+                        <a class="left carousel-control" href="#carousel-33123" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                     <span class="sr-only">Previous</span></a>
-                    <a class="right carousel-control" href="#carousel-33123" data-slide="next">
+                        <a class="right carousel-control" href="#carousel-33123" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                         <span class="sr-only">Next</span></a>
-                </div>
-                <div class="page-header">
+                    </div>
 
-                </div>
+                    <!-- Matchresults -->
 
-                <h3 id="resultAnzeige">Matching Results</h3>
-
+                    <h3 id="resultAnzeige">Matching Results</h3>
+                    <!--
                 <ul class="nav nav-pills">
                     <li class="active">
                         <a href="#">Matching Results</a>
                     </li>
+                    
                     <li class="active">
                         <a href="#">Messages</a>
                     </li>
                 </ul>
-                <h2>Mike</h2>
-                <p>Hi, I'm Mike, 17 and from the US. I like tennis, rugby and music. I live in Philadelphia, but I'm going to move to San Francisco in a year to go to university there. I speak english, german and a little bit of spanish and I would like to meet someone from these countries to improve my language skills.</p>
+-->
 
-                <div>
-                    #german #english #spanish #tennis #rugby #music
-                </div>
+                    <!-- person1 -->
+                    <h2>Mike</h2>
+                    <p>Hi, I'm Mike, 17 and from the US. I like tennis, rugby and music. I live in Philadelphia, but I'm going to move to San Francisco in a year to go to university there. I speak english, german and a little bit of spanish and I would like to meet someone from these countries to improve my language skills.</p>
 
-                <p>
-                    <a class="btn" href="#">View details »</a>
-                </p>
-                <div class="media well">
-                    <a href="#" class="pull-left"><img alt="Bootstrap Media Preview" src="/image_files/image/image%204.jpeg" width="300" height="200" class="media-object" /></a>
-                    <div class="media-body">
-                        <h4 class="media-heading">
-                            Last postet Pictures
-                        </h4>
-                        <div class="media">
-                            <a href="#" class="pull-left"><img alt="Bootstrap Media Another Preview" src="/image_files/image/image%203.jpeg"  width="300" height="200" class="media-object" /></a>
-                            <div class="media-body">
-                                <h4 class="media-heading">
-                                    
-                                </h4>
+                    <div>
+                        #german #english #spanish #tennis #rugby #music
+                    </div>
+
+                    <p>
+                        <a class="btn" href="#">View details »</a>
+                    </p>
+                    <div class="media well">
+                        <a href="#" class="pull-left"><img alt="Bootstrap Media Preview" src="/image_files/image/image%204.jpeg" width="300" height="200" class="media-object" /></a>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                Last postet Pictures
+                            </h4>
+                            <div class="media">
+                                <a href="#" class="pull-left"><img alt="Bootstrap Media Another Preview" src="/image_files/image/image%203.jpeg"  width="300" height="200" class="media-object" /></a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">
+
+                                    </h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <ul class="nav nav-pills">
-                    <li class="active">
-                        <a href="#"> <span class="badge pull-right">42</span> followers</a>
-                    </li>
-                    <li>
-                        <a href="#"> <span class="badge pull-right">16</span>comments</a>
-                    </li>
-                </ul>
-                <div class="row">
-                    <div class="col-md-12">
+                    <ul class="nav nav-pills">
+                        <li class="active">
+                            <a href="#"> <span class="badge pull-right">42</span> followers</a>
+                        </li>
+                        <li>
+                            <a href="#"> <span class="badge pull-right">16</span>comments</a>
+                        </li>
+                    </ul>
+
+                    <!-- person2 -->
+                    <h2>Hannah</h2>
+                    <p>Hi I'm Hannah, and I love skin-diving. I live in Australia so I can go skin-diving every day after school. I speak a lot of languages and I would like to improve my skills even more. I have been to Germany and to Italy, so I speak Italian, German and besides that Korean and Spanish.</p>
+
+                    <div>
+                        #german #english #korean #italian #spanish #skin-diving #australia (key words that match with you)
+                    </div>
+
+                    <p>
+                        <a class="btn" href="#">View details »</a>
+                    </p><img alt="Bootstrap Image Preview" src="/image_files/image/image%201.jpeg" width="300" height="200" />
+                    <ul class="nav nav-pills">
+
+                        <li class="active">
+                            <a href="#"> <span class="badge pull-right">2</span> followers</a>
+                        </li>
+                        <li>
+                            <a href="#"> <span class="badge pull-right">16</span> comments</a>
+                        </li>
+                    </ul>
+                    <!-- person3 -->
+                    <h2>Name 3</h2>
+                    <p>Basic personal info of the matching peers, including ID, portrait, age, gender, location, and hobby.</p>
+
+                    <div>
+                        # key words # key words (key words that match with the searcher)
+                    </div>
+
+                    <p>
+                        <a class="btn" href="#">View details »</a>
+                    </p><img alt="Bootstrap Image Preview" src="/image_files/image/image%205.jpeg" width="300" height="200" />
+                    <ul class="nav nav-pills">
+
+                        <li class="active">
+
+                            <a href="#"> <span class="badge pull-right">12</span> followers</a>
+                        </li>
+                        <li>
+                            <a href="#"> <span class="badge pull-right">10</span>comments</a>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#">Prev</a>
+                            </li>
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                            <li>
+                                <a href="#">Next</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <h2>
-                    <span>Hannah</span>
-                </h2>
-                <p>Hi I'm Hannah, and I love skin-diving. I live in Australia so I can go skin-diving every day after school. I speak a lot of languages and I would like to improve my skills even more. I have been to Germany and to Italy, so I speak Italian, German and besides that Korean and Spanish.</p>
-
-                <div>
-                    #german #english #korean #italian #spanish #skin-diving #australia
-                    (key words that match with you)
-                </div>
-
-                <p>
-                    <a class="btn" href="#">View details »</a>
-                </p><img alt="Bootstrap Image Preview" src="/image_files/image/image%201.jpeg" width="300" height="200" />
-                <ul class="nav nav-pills">
-
-                    <li class="active">
-                        <a href="#"> <span class="badge pull-right">2</span> followers</a>
-                    </li>
-                    <li>
-                        <a href="#"> <span class="badge pull-right">16</span> comments</a>
-                    </li>
-                </ul>
-                <div class="row">
-                    <div class="col-md-12">
-                    </div>
-                </div>
-                <h2>
-                    <span><span>Name 3</span></span>
-                </h2>
-                <p>
-                    Basic personal info of the matching peers, including ID, portrait, age, gender, location, and hobby.
-                </p>
-
-                <div>
-                    # key words # key words (key words that match with the searcher)
-                </div>
-
-                <p>
-                    <a class="btn" href="#">View details »</a>
-                </p><img alt="Bootstrap Image Preview" src="/image_files/image/image%205.jpeg" width="300" height="200" />
-                <ul class="nav nav-pills">
-
-                    <li class="active">
-
-                        <a href="#"> <span class="badge pull-right">12</span> followers</a>
-                    </li>
-                    <li>
-                        <a href="#"> <span class="badge pull-right">10</span>comments</a>
-                    </li>
-                </ul>
-                <div class="row">
-                    <div class="col-md-12">
-                    </div>
-                </div>
-                <ul class="pagination">
-                    <li>
-                        <a href="#">Prev</a>
-                    </li>
-                    <li>
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">Next</a>
-                    </li>
-                </ul>
             </div>
+            <!-- personal profile, submit user data -->
+            <div>
+                <img id="profilPic">
+                <div id="formular">
+                    <form id="profile" onsubmit="return submitUserData(this)">
+                        <label>Name</label><input id="uname" name="uname" required> <br>
+                        <label>Gender</label><input id="gender" name="gender" required><br>
+                        <label>Age</label><input id="age" name="age" required><br>
+                        <label>Language</label><input id="languages" name="languages" data-role="tagsinput"><br>
+                        <label>Hobbies</label><input name="hobbies" data-role="tagsinput"><br>
+                        <button type="submit" onsubmit="return submitUserData(this)">Submit</button>
+
+                    </form>
+                </div>
+                <style>
+                    body {
+                        font-family: 'Quicksand', sans-serif;
+                        margin: 20px;
+                    }
+
+                    label {
+                        margin-right: 3px;
+                    }
+
+
+                    #ueberschrift {
+                        align-content: center;
+                        text-align: center;
+                    }
+
+                    #resultAnzeige {
+                        background-color: #d5ddea;
+                        font-family: 'Quicksand', sans-serif;
+                        padding: 5px;
+                    }
+
+                    body {
+                        font-family: 'Quicksand', sans-serif;
+                    }
+
+                </style>
+            </div>
+
         </div>
-    </div>
-
- <div>
-        <img id="profilPic">
-        <div id="formular">
-        <form id="profile" onsubmit="return submitUserData(this)">
-        <label>Name</label><input id="uname" name="uname" required> <br>
-        <label>Gender</label><input id="gender" name="gender" required><br>
-        <label>Age</label><input id="age" name="age" required><br>
-        <label>Language</label><input id="languages" name="languages" data-role="tagsinput"><br>
-        <label>Hobbies</label><input name="hobbies" data-role="tagsinput"><br>
-        <button type="submit" onsubmit="return submitUserData(this)">Submit</button>  
-     
-        </form>
 
 
-             </div>
-<style>
-
-    body{
-        font-family: 'Quicksand', sans-serif;
-        margin: 20px;
-    }
-    
-    label{
-        margin-right: 3px;
-    }
-
-
-        #ueberschrift {
-            align-content: center;
-            text-align: center;
-        }
-
-        #resultAnzeige {
-            background-color: #d5ddea;
-            font-family: 'Quicksand', sans-serif;
-            padding: 5px;
-        }
-
-        body {
-            font-family: 'Quicksand', sans-serif;
-        }
-
-    </style>
-
-            
-
-    </div>
-
-    </div>
-
-    <!--	<ul>
-						<li>
-							searching and matching for the suitable friend
-						</li>
-						<li>
-							Customizing your social life
-						</li>
-						<li>
-							Bringing fun and company
-						</li>
-						<li>
-
-							Connecting the world together
-						</li>
-						
-
-</ul>  -->
-
-    <script type="text/javascript" src="/js/data.js"></script>
+        <script type="text/javascript" src="/js/data.js"></script>
 
 </body>
 
 </html>
-
-<style>
-    body {
-        font-family: 'Quicksand', sans-serif;
-    }
-
-    .datenEingeben {
-        padding: 5px;
-
-    }
-
-</style>
