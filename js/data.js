@@ -89,8 +89,11 @@
 
  }
 
-function displayUserData(allUserData){
-    allUserData.forEach()
+function displayUserData(allUserDataMatch){
+    allUserDataMatch.forEach(function (userData) {
+        var userDataString = userData.toString
+        console.log(userDataString)
+        })
 }
 
 
